@@ -2,49 +2,47 @@ html{text-align: center;}
 
 
 body {
-    background-color: blanchedalmond; /* Dark background for contrast */
-    font-family: 'Poppins', Arial, Helvetica, sans-serif; /* Use a modern Google Font */
-    font-weight: 400; /* Regular weight for body text */
-    color:#05041f ; /* Vibrant pink for text */
+    background-color: blanchedalmond; 
+    font-family: Arial, Helvetica, sans-serif, ; 
+    font-weight: 400; 
     font-size: larger;
     text-align: center;
-    line-height: 1.6; /* Improve readability */
-  }
+    line-height: 1.6; }
   
-  /* Add a subtle glow effect to hyperlinks */
+  
   a {
     color: palevioletred;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
     font-weight: bold;
     transition: color 0.3s ease, text-shadow 0.3s ease;
   }
   
   a:hover {
-    color: pink; /* Cyan on hover */
-    text-shadow: 0 0 10px pink, 0 0 20px pink; /* Glow effect */
+    color: pink; 
+    text-shadow: 0 0 10px pink, 0 0 20px pink; 
   }
   
-  /* Style paragraphs with a modern look */
+ 
   p {
     font-weight: 400;
     font-size: medium;
-    color:brown; /* Soft pink for paragraph text */
+    color:brown; 
     text-align: center;
   }
   
-  /* Add a cool shadow effect to all text in the body */
+  
   body, p {
-    text-shadow: 2px 2px 4px rgba(255, 20, 147, 0.4); /* Pink shadow for depth */
+    text-shadow: 2px 2px 4px rgba(255, 20, 147, 0.4); 
   }
   
-  /* Optional: Add a custom heading style for titles */
+  
   h1, h2, h3 {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     color: brown;
     text-shadow: 0px 0px 10px (0,255,255,0.8);
   }
   
-  /* Ensure the body looks good on all screen sizes */
+  
   @media (max-width: 768px) {
     body {
       font-size: medium;
@@ -53,17 +51,16 @@ body {
     }
   }
   
-  /*using an anchor fuction im able to change the color of the hyper links   */
   
   p{font-weight: var(--font-weight-regular);; 
     font-size: medium ;}
-  /* this alters font size and weight */
+  
   
   
   body{text-align:center ;}
   
   p{text-align: center;}
-  /* this aligns specified texts to th center  */
+  
   
   #myLink {
     display: inline-block;
