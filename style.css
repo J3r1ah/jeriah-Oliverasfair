@@ -1,106 +1,120 @@
-html{text-align: center;}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+html {
+    text-align: center;
+}
 
 body {
-    background-color: blanchedalmond; 
-    font-family: Arial, Helvetica, sans-serif, ; 
-    font-weight: 400; 
+    background-color: #fff5e6; /* Softer background color */
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    font-weight: 400;
     font-size: larger;
     text-align: center;
-    line-height: 1.6; }
-  
-  
-  a {
-    color: palevioletred;
-    text-decoration: none; 
+    line-height: 1.6;
+    color: #a98db8; /* Soft purple for main text */
+}
+
+a {
+    color: #ff9fb5; /* Pastel pink */
+    text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease, text-shadow 0.3s ease;
-  }
-  
-  a:hover {
-    color: pink; 
-    text-shadow: 0 0 10px pink, 0 0 20px pink; 
-  }
-  
- 
-  p {
+}
+
+a:hover {
+    color: #ffb5d0; /* Lighter pink on hover */
+    text-shadow: 0 0 10px #ffb5d0, 0 0 20px #ffb5d0;
+}
+
+p {
     font-weight: 400;
     font-size: medium;
-    color:brown; 
+    color: #8e7cc3; /* Soft purple */
     text-align: center;
-  }
-  
-  
-  body, p {
-    text-shadow: 2px 2px 4px rgba(255, 20, 147, 0.4); 
-  }
-  
-  
-  h1, h2, h3 {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    color: brown;
-    text-shadow: 0px 0px 10px (0,255,255,0.8);
-  }
-  
-  
-  @media (max-width: 768px) {
+}
+
+body, p {
+    text-shadow: 2px 2px 4px rgba(255, 182, 193, 0.4); /* Softer text shadow */
+}
+
+h1, h2, h3 {
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    color: #c48b9f; /* Muted rose color */
+    text-shadow: 0px 0px 10px rgba(255, 182, 193, 0.8);
+}
+
+@media (max-width: 768px) {
     body {
-      font-size: medium;
-      padding: 10px;
-      line-height: 1.4;
+        font-size: medium;
+        padding: 10px;
+        line-height: 1.4;
     }
-  }
-  
-  
-  p{font-weight: var(--font-weight-regular);; 
-    font-size: medium ;}
-  
-  
-  
-  body{text-align:center ;}
-  
-  p{text-align: center;}
-  
+}
+
+/* Cloud-like decorations for headings */
+h1::before, h1::after,
+h2::before, h2::after,
+h3::before, h3::after {
+    content: '☁️';
+    font-size: 0.8em;
+    vertical-align: middle;
+    margin: 0 10px;
+    opacity: 0.7;
+}
+
   
   #myLink {
     display: inline-block;
     padding: 12px 24px;
-    background-color: palevioletred;
-    color: #ffffff;
+    background-color: #ffd1dc; /* Pastel pink */
+    color: #8a7f8d; /* Soft gray for text */
     text-decoration: none;
     border-radius: 25px;
     cursor: pointer;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* More playful font */
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    box-shadow: 0 4px 6px rgba(232, 3, 167, 0.3);
+    box-shadow: 0 4px 10px rgba(255, 182, 193, 0.5); /* Softer, larger shadow */
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-  }
-  
-  #myLink:before {
+    border: 2px solid #fff; /* White border for extra cuteness */
+}
+
+#myLink:before {
     content: '';
     position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    transition: all 0.4s;
-  }
-  
-  #myLink:hover {
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.3) 20%, transparent 70%);
+    transform: scale(0);
+    transition: transform 0.6s ease-out;
+}
+
+#myLink:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 8px rgba(232, 3, 167, 0.5);
-  }
-  
-  #myLink:hover:before {
-    left: 100%;
-  }
-  
-  #myLink:active {
+    box-shadow: 0 6px 15px rgba(255, 182, 193, 0.7);
+    background-color: #ffecf0; /* Lighter pink on hover */
+}
+
+#myLink:hover:before {
+    transform: scale(1);
+}
+
+#myLink:active {
     transform: translateY(1px);
-    box-shadow: 0 2px 4px rgba(232, 3, 167, 0.5);
-  }
+    box-shadow: 0 2px 5px rgba(255, 182, 193, 0.5);
+}
+
+/* Cloud-like decorations */
+#myLink:after {
+    content: '☁️';
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 24px;
+    opacity: 0.7;
+}
