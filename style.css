@@ -97,7 +97,7 @@ h3::before, h3::after {
 #myLink:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(255, 182, 193, 0.7);
-    background-color: #ffecf0; /* Lighter pink on hover */
+    background-color: #ffecf0; /
 }
 
 #myLink:hover:before {
@@ -109,7 +109,7 @@ h3::before, h3::after {
     box-shadow: 0 2px 5px rgba(255, 182, 193, 0.5);
 }
 
-/* Cloud-like decorations */
+/* Cloud */
 #myLink:after {
     content: '☁️';
     position: absolute;
