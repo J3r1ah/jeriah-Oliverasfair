@@ -117,4 +117,35 @@ h3::before, h3::after {
     right: -10px;
     font-size: 24px;
     opacity: 0.7;
+
 }
+
+
+@media (max-width: 10px) {
+  .video-container {
+    max-width: 50%;
+  }
+}
+
+.image-container {
+  max-width: 40%;
+  max-height: 30%;
+  margin: 20px auto;
+  border: 8px solid #FFB6C1;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(239, 154, 216, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+  transform: scale(1.02);
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
