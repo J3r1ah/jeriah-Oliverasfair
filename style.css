@@ -166,3 +166,67 @@ h3::before, h3::after {
     margin: 0 10px;
     opacity: 0.7;
 }
+
+li {
+    display: inline-block;
+  }
+
+  nav {
+    font-family: 'Slim Jim', 'Impact', 'Arial Black', sans-serif;
+    background: rgb(246, 193, 247);
+  }
+  li {
+    display: inline-block;
+    border-left: 1px solid rgb(255, 234, 190); /* neither is this */
+    &:first-child {
+      border-left: none;
+    }
+  }
+  a {
+    color: rgb(252, 234, 166);
+    text-decoration: none;
+    &:hover {
+      border-bottom: 2px solid rgb(250, 241, 165);
+    }
+  }
+
+  nav {
+    background-color: #fce4ec; /* Light pink background */
+    padding: 10px;
+    border-radius: 20px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: fit-content; /* Adjust width to content */
+    margin: 20px auto; /* Center the nav */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arrange items horizontally */
+    align-items: center; /* Vertically center items */
+}
+
+nav li {
+    margin: 0 15px; /* Space out the list items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underlines */
+    color: #e91e63; /* Pink text color */
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: #fff; /* White background for the links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: #e91e63; /* Pink background on hover */
+    color: #fff; /* White text on hover */
+}
+
+
+body {
+    font-family: 'Comic Sans MS', 'Chalkboard', cursive; 
+}
