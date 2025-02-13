@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Surprise effect on click
     button.addEventListener('click', function(e) {
         // Create and animate heart emojis
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 300; i++) {
             const heart = document.createElement('span');
             heart.textContent = '💖';
             heart.style.position = 'absolute';
-            heart.style.left = (Math.random() * 100) + '%';
+            heart.style.left = (Math.random() * 100000000) + '%';
             heart.style.top = button.offsetTop + 'px';
             heart.style.fontSize = '24px';
             heart.style.pointerEvents = 'none';
