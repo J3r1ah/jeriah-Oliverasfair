@@ -239,3 +239,13 @@ body {
 
 
 
+#navsticky{
+
+position: sticky;
+top: 0;
+-ms-grid-layer: top;
+
+}
+
+
+
