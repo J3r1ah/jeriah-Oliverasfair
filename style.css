@@ -248,4 +248,20 @@ top: 0;
 }
 
 
+.project{
+  
+}
+
+.project img{
+  text-align: left;
+}
+
+.project:nth-child(even) {
+  text-align: center;
+  
+}
+
+
+
+
 
