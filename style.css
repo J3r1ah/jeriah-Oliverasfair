@@ -63,7 +63,7 @@ h3::before, h3::after {
 }
 
   
-  #myLink {
+  .myLink {
     display: inline-block;
     padding: 12px 24px;
     background-color: #ffd1dc; /* Pastel pink */
@@ -82,7 +82,7 @@ h3::before, h3::after {
     border: 2px solid #fff; /* White border for extra cuteness */
 }
 
-#myLink:before {
+.myLink:before {
     content: '';
     position: absolute;
     top: -50%;
@@ -94,23 +94,23 @@ h3::before, h3::after {
     transition: transform 0.6s ease-out;
 }
 
-#myLink:hover {
+.myLink:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(255, 182, 193, 0.7);
     background-color: #ffecf0; /
 }
 
-#myLink:hover:before {
+.myLink:hover:before {
     transform: scale(1);
 }
 
-#myLink:active {
+.myLink:active {
     transform: translateY(1px);
     box-shadow: 0 2px 5px rgba(255, 182, 193, 0.5);
 }
 
 /* Cloud */
-#myLink:after {
+.myLink:after {
     content: '☁️';
     position: absolute;
     top: -15px;
@@ -248,9 +248,7 @@ top: 0;
 }
 
 
-.project{
-  
-}
+
 
 .project img{
   text-align: left;
@@ -265,3 +263,59 @@ top: 0;
 
 
 
+#myLink {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ffd1dc; /* Pastel pink */
+  color: #8a7f8d; /* Soft gray for text */
+  text-decoration: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* More playful font */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.5); /* Softer, larger shadow */
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #fff; /* White border for extra cuteness */
+}
+
+#myLink:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 20%, transparent 70%);
+  transform: scale(0);
+  transition: transform 0.6s ease-out;
+}
+
+#myLink:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 182, 193, 0.7);
+  background-color: #ffecf0; /
+}
+
+#myLink:hover:before {
+  transform: scale(1);
+}
+
+#myLink:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(255, 182, 193, 0.5);
+}
+
+/* Cloud */
+#myLink:after {
+  content: '☁️';
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-size: 24px;
+  opacity: 0.7;
+
+}
