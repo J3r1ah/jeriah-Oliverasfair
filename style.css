@@ -265,7 +265,7 @@ top: 0;
 
 
 
-#myLink {
+.myLink {
   display: inline-block;
   padding: 12px 24px;
   background-color: #ffd1dc; /* Pastel pink */
@@ -284,7 +284,7 @@ top: 0;
   border: 2px solid #fff; /* White border for extra cuteness */
 }
 
-#myLink:before {
+.myLink:before {
   content: '';
   position: absolute;
   top: -50%;
@@ -296,23 +296,23 @@ top: 0;
   transition: transform 0.6s ease-out;
 }
 
-#myLink:hover {
+.myLink:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgba(255, 182, 193, 0.7);
   background-color: #ffecf0; /
 }
 
-#myLink:hover:before {
+.myLink:hover:before {
   transform: scale(1);
 }
 
-#myLink:active {
+.myLink:active {
   transform: translateY(1px);
   box-shadow: 0 2px 5px rgba(255, 182, 193, 0.5);
 }
 
 /* Cloud */
-#myLink:after {
+.myLink:after {
   content: '☁️';
   position: absolute;
   top: -15px;
