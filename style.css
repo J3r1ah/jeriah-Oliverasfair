@@ -175,56 +175,66 @@ li {
     }
   }
 
+
   nav {
-    background-color: #fce4ec; /* Light pink background */
-    
-    border-radius: 10px; /* Rounded corners for a softer look */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    width: fit-content; /* Adjust width to content */
-    margin: 20px auto; /* Center the nav */
+    background-color: #fce4ec;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width on smaller screens */
+    max-width: 800px; /* Maximum width on larger screens */
+    margin: 20px auto;
+    padding: 10px;
 }
 
 nav ul {
-    list-style: none; /* Remove bullet points */
-    padding: 10;
-    margin: 10;
-    display: flex; /* Arrange items horizontally */
-    align-items: center; /* Vertically center items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Center items */
+    align-items: center;
 }
 
 nav li {
-    margin: 0 20px; /* Space out the list items */
+    margin: 10px; /* Reduced margin for better spacing on small screens */
 }
 
 nav a {
-    text-decoration: none; /* Remove underlines */
-    color: #e91e63; /* Pink text color */
+    text-decoration: none;
+    color: #e91e63;
     font-weight: bold;
-    padding: 10px 26px;
+    padding: 10px 20px;
     border-radius: 100px;
-    background-color: #fff; /* White background for the links */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block; /* Allows the anchor to have padding */
 }
 
 nav a:hover {
-    background-color: #e91e63; /* Pink background on hover */
-    color: #fff; /* White text on hover */
+    background-color: #e91e63;
+    color: #fff;
 }
 
-@media screen and (min-width: 480px) {
-  nav {
-      font-size: medium;
-      padding: 10px;
-      line-height: 1.4;
-  }
-}
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    nav {
+        border-radius: 0; /* Remove border-radius on small screens */
+    }
 
-@media screen and (max-width: 400px) {
-  nav {
-      font-size: medium;
-      padding: 10px;
-      line-height: 1.4;
-  }
+    nav ul {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    nav li {
+        margin: 5px 0; /* Adjust vertical spacing */
+        width: 100%; /* Full width for list items */
+    }
+
+    nav a {
+        display: block; /* Make links full width */
+        text-align: center;
+    }
 }
 
 
@@ -268,8 +278,8 @@ top: 0;
 .myLink {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #ffd1dc; /* Pastel pink */
-  color: #8a7f8d; /* Soft gray for text */
+  background-color: #ffd1dc;
+  color: #8a7f8d;
   text-decoration: none;
   border-radius: 25px;
   cursor: pointer;
@@ -324,21 +334,47 @@ top: 0;
 
 
 
-@media screen and (min-width: 480px) {
+/* Base styles for all devices */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   body {
-      font-size: medium;
-      padding: 10px;
-      line-height: 1.4;
+    font-size: 14px;
+    padding: 10px;
   }
 }
 
-@media screen and  (max-width: 481px) {
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
   body {
-      font-size: medium;
-      padding: 10px;
-      line-height: 1.4;
+    font-size: 16px;
+    padding: 30px;
   }
 }
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 18px;
+    padding: 40px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+    padding: 50px;
+  }
+}
+
 
 
 
