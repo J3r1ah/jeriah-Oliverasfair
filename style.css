@@ -208,7 +208,7 @@ nav a {
     border-radius: 100px;
     background-color: #fff;
     transition: background-color 0.3s, color 0.3s;
-    display: inline-block; /* Allows the anchor to have padding */
+    display: inline-block; 
 }
 
 nav a:hover {
@@ -220,10 +220,6 @@ nav a:hover {
 @media screen and (max-width: 600px) {
     nav {
         border-radius: 0; /* Remove border-radius on small screens */
-    }
-
-    nav ul {
-        flex-direction: column; /* Stack items vertically on small screens */
     }
 
     nav li {
