@@ -219,11 +219,11 @@ nav a:hover {
 /* Media query for smaller screens */
 @media screen and (max-width: 600px) {
     nav {
-        border-radius: 0; /* Remove border-radius on small screens */
+        border-radius: 50px; 
     }
 
     nav li {
-        margin: 5px 0; /* Adjust vertical spacing */
+        margin: 0.1px 0; /* Adjust vertical spacing */
         width: 100%; /* Full width for list items */
     }
 
